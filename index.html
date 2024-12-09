@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mi primer sitio web</title>
+	<script>
+		function validaFormulario(){
+			let nombre=document.getElementById("nombre").value;
+			if(nombre==""){
+				alert("error: porfavor escriba el nombre");
+				return false;
+			}
+		
+		
+			let email=document.getElementById("email").value;
+			if(email==""){
+				alert("error: porfavor escriba el email");
+				return false;
+			}
+			
+			let motivo=document.getElementById("motivo").value;
+			if(motivo==""){
+				alert("error: porfavor escriba el motivo");
+				return false;
+			}
+			return true;
+		}
+		
+
+	</script>
+</head>
+<body>
+	<h1>mi escuela d futbol</h1>
+
+	<h2>escuela de futbol union gaira</h2>
+
+	<p>matriculate con nosotros</p>
+
+	<img src="imagen1.avif" width="20%">
+
+	<p>mis hobbies</p>
+	<ul>
+		<li>jugar futbol</li>
+		<li>ir a cine</li>
+		<li>ver tv</li>
+	</ul>
+	<p>mis tareas</p>
+	<ol>
+		<li>levantarme</li>
+		<li>bañarme</li>
+		<li>lavarme los dientes</li>
+		<li>vestirme</li>
+		<li>preparar desayuno</li>
+		<li>desayunar</li>
+		<li>lavar los platos</li>
+		<li>irme a clases</li>
+	</ol>
+
+	<table border="">
+		<thead>
+			<tr>
+				<th>lunes</th>
+				<th>martes</th>
+				<th>miercoles</th>
+				<th>jueves</th>
+				<th>viernes</th>
+				<th>sabado</th>
+				<th>domingo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>hacer aseo</td>
+				<td>salir a entrenar</td>
+				<td>lavar los platos</td>
+				<td>terminar las tareas</td>
+				<td>lavar la ropa</td>
+				<td>organizar el armario</td>
+				<td>descanzo</td>
+			</tr>
+		</tbody>
+		
+	</table>
+
+			<form onsubmit="return validaFormulario()">
+			<label>nombre:</label>
+			<input type="text" name="nombre" id="nombre">
+			<label>correo electronico:</label>
+			<input type="email" name="email" id="email">
+			<label>mensaje:</label>
+			<textarea id="motivo"></textarea>
+			<input type="submit" value="enviar">
+		</form>
+
+
+</body>
+</html>
